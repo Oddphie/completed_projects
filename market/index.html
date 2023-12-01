@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="hidden">
+        <ul>
+            <li>Home</li>
+            <li>Shop</li>
+            <li>More Info</li>
+            <li>About</li>
+        </ul>
+    </header>
+    <section class="title hidden delay">
+        <h1 class="hidden">Title</h1>
+        <div class="background"></div>
+    </section>
+    <main>
+        <section id="shop" class="hidden">
+            <section id="options">
+                <section>
+                    <p>Price</p>
+                    <section id="range-slider">
+                        <input type="range" min="0" max="250" value="0" id="from-slider">
+                        <input type="range" min="0" max="250" value="250" id="to-slider">
+                        <div id="range-colour"></div>
+
+                        <label for="from-slider"></label>
+                        <label for="to-slider"></label>
+                    </section>
+
+                    <p>Category 1</p>
+                    <div>
+                        <input type="checkbox" id="category-1.0">
+                        <label for="category-1.0">Something</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="category-1.1">
+                        <label for="category-1.1">Goes</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="category-1.2">
+                        <label for="category-1.2">Here</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="category-1.3">
+                        <label for="category-1.3">Lorem</label>
+                    </div>
+
+                    <p>Category 2</p>
+                    <div>
+                        <input type="checkbox" id="category-2.0">
+                        <label for="category-2.0">Ipsum</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="category-2.1">
+                        <label for="category-2.1">Text</label>
+                    </div>
+
+                    <p>Category 3</p>
+                    <div>
+                        <input type="checkbox" id="category-3.0">
+                        <label for="category-3.0">Placeholder</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="category-3.1">
+                        <label for="category-3.1">Option</label>
+                    </div>
+                </section>
+                <section>
+                    <p>Condition</p>
+                    <div>
+                        <input type="checkbox" id="category-4.0">
+                        <label for="category-4.0">New</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="category-4.1">
+                        <label for="category-4.1">Great</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="category-4.2">
+                        <label for="category-4.2">Good</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="category-4.3">
+                        <label for="category-4.3">Okay</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="category-4.4">
+                        <label for="category-4.4">Not good</label>
+                    </div>
+
+                    <p>Category 4</p>
+                    <div>
+                        <input type="checkbox" id="category-5.0">
+                        <label for="category-5.0">Lorem</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="category-5.1">
+                        <label for="category-5.1">Ipsum</label>
+                    </div>
+
+                    <p>Category 5</p>
+                    <div>
+                        <input type="checkbox" id="category-6.0">
+                        <label for="category-6.0">One</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="category-6.1">
+                        <label for="category-6.1">Two</label>
+                    </div>
+                </section>
+            </section>
+            <section>
+                <section id="info">
+                    <section>
+                        <p>Sort by</p>
+                        <section>
+                            <span class="select">Price</span>
+                            <div class="panel">
+                                <input type="radio" id="sortby-1.0" name="sortby-1" value="price">
+                                <label for="sortby-1.0">Price</label>
+                                <input type="radio" id="sortby-1.1" name="sortby-1" value="alphabetical">
+                                <label for="sortby-1.1">Alphabetical</label>
+                            </div>
+                        </section>
+                        <section>
+                            <span class="select">Ascending</span>
+                            <div class="panel">
+                                <input type="radio" id="sortby-2.0" name="sortby-2" value="ascending">
+                                <label for="sortby-2.0">Ascending</label>
+                                <input type="radio" id="sortby-2.1" name="sortby-2" value="descending">
+                                <label for="sortby-2.1">Descending</label>
+                            </div>
+                        </section>
+                    </section>
+                    <p>Page 1 of 1</p>
+                </section>
+                <section id="goods"></section>
+            </section>
+        </section>
+    </main>
+</body>
+
+<script src="script.js"></script>
+
+</html>

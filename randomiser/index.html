@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pick for me</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.5.0/lib/p5.js"></script>
+</head>
+
+<body>
+    <div id="draw"></div>
+    <h1>Pick for me plz</h1>
+    <main>
+        <div id="sentence">
+            Create a <span id="type">[website type]</span> about <span id="about">[something]</span> that includes <div
+                class="box-col"></div><span id="theme">[theme]</span>.
+        </div>
+        <button id="rand-btn">Randomise</button>
+    </main>
+    <form for="changes" id="change-settings">
+        <input type="submit" id="submit-changes" value="Make changes">
+        <select name="type-options" id="type-options">
+            <option value="websites">Websites</option>
+            <option value="characters">Characters</option>
+        </select>
+        <select name="about-number" id="about-number">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <select name="theme-number" id="theme-number">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>

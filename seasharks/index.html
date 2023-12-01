@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🦈🦈🦈🦈</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <svg>
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+
+                <g id="cloud-medium">
+                    <path d="M0 60 Q20 30 40 45 L40 45 Q60 20 80 40 L80 40 Q110 0 140 40 L140 40 L140 40 Q170 30 185 60 L185 60 Q90 58 0 60 Z" fill="var(--white)" />
+                </g>
+                <g id="cloud-small">
+                    <path d="M0 60 Q15 40 30 50 L30 50 Q40 40 50 60 L50 60 Q25 59 0 60 Z" fill="var(--white)" />
+                </g>
+            </defs>
+        </svg>
+        <svg class="clouds">
+            <g>
+                <use xlink:href="#cloud-medium" x="-150" y="0" />
+                <use xlink:href="#cloud-medium" x="250" y="-60" />
+                <use xlink:href="#cloud-medium" x="900" y="-20" />
+                <use xlink:href="#cloud-medium" x="300" y="100" />
+                <use xlink:href="#cloud-medium" x="500" y="250" />
+                <use xlink:href="#cloud-medium" x="140" y="370" />
+                <use xlink:href="#cloud-medium" x="650" y="320" />
+                <use xlink:href="#cloud-medium" x="800" y="280" />
+                <use xlink:href="#cloud-medium" x="1000" y="350" />
+                <use xlink:href="#cloud-small" x="60" y="80" />
+                <use xlink:href="#cloud-small" x="10" y="380" />
+                <use xlink:href="#cloud-small" x="400" y="20" />
+                <use xlink:href="#cloud-small" x="680" y="0" />
+                <use xlink:href="#cloud-small" x="1000" y="80" />
+                <use xlink:href="#cloud-small" x="1200" y="20" />
+                <use xlink:href="#cloud-small" x="1250" y="280" />
+            </g>
+            <g>
+                <use xlink:href="#cloud-medium" x="200" y="280" />
+                <use xlink:href="#cloud-medium" x="800" y="90" />
+                <use xlink:href="#cloud-small" x="600" y="150" />
+                <use xlink:href="#cloud-small" x="200" y="10" />
+                <use xlink:href="#cloud-small" x="1200" y="220" />
+                <use xlink:href="#cloud-medium" x="-200" y="200" />
+                <use xlink:href="#cloud-small" x="20" y="320" />
+            </g>
+            <g>
+                <use xlink:href="#cloud-medium" x="30" y="150" />
+                <use xlink:href="#cloud-medium" x="500" y="50" />
+                <use xlink:href="#cloud-small" x="440" y="50" />
+                <use xlink:href="#cloud-medium" x="900" y="300" />
+                <use xlink:href="#cloud-medium" x="-140" y="40" />
+                <use xlink:href="#cloud-small" x="55" y="40" />
+                <use xlink:href="#cloud-medium" x="1100" y="150" />
+                <use xlink:href="#cloud-small" x="1300" y="150" />
+                <use xlink:href="#cloud-small" x="500" y="200" />
+                <use xlink:href="#cloud-small" x="300" y="320" />
+            </g>
+        </svg>
+
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" />
+                <use xlink:href="#gentle-wave" x="48" y="3" />
+                <use xlink:href="#gentle-wave" x="48" y="5" />
+                <text x="5" y="38" class="header">Blahaj</text>
+                <use xlink:href="#gentle-wave" x="48" y="7" />
+            </g>
+        </svg>
+
+        <svg class="boat">
+            <g>
+                <ellipse cx="80" cy="70" rx="72" ry="6" />
+                <path d="M30 50 L30 10 L95 10 L95 50 L80 50 L80 20 L70 20 L70 35 L55 35 L55 20 L45 20 L45 35 L85 35 L85 50 Z" fill="white" />
+                <path d="M25 15 L25 10 Q62.5 7.5 100 10 L100 15 Z" fill="crimson" />
+                <path d="M0 30 Q90 45 150 45 L140 70 L25 70 Q0 40 0 30 Z" fill="crimson" />
+            </g>
+        </svg>
+        <div id="sun" class="sky-object"></div>
+        <div id="moon" class="sky-object"></div>
+    </header>
+    <main>
+        <svg id="fishing-line">
+            <defs>
+                <path id="hook" d="M30 0 L35 0 L35 40 Q35 60 15 60 Q0 60 0 40 L0 30 Q0 35 10 45 L5 45 Q5 55 15 55 Q30 55 30 40 " />
+                <linearGradient id="gradient-1" x1="0" y1="0" x2="0" y2="6%" gradientTransform="rotate(0.2)">
+                    <stop offset="16%" stop-color="lightgrey" />
+                    <stop offset="16%" stop-color="grey" />
+                </linearGradient>
+                <linearGradient id="repeat" xlink:href="#gradient-1" spreadMethod="repeat" />
+            </defs>
+            <g>
+                <rect width="5" height="calc(100vh - 64px)" x="30" fill="url(#repeat)" />
+            </g>
+            <g>
+                <ellipse cx="32.5" cy="4" rx="5" ry="8" />
+                <use xlink:href="#hook" />
+            </g>
+        </svg>
+        <article>
+            <h2>Click the hook to go to top</h2>
+        </article>
+        <article>
+            <h2>The backgrounds change depending on the time of day</h2>
+        </article>
+    </main>
+
+    <script>
+        let main = document.getElementsByTagName("main")[0];
+
+        for (let j = 0; j < 20; j++) {
+            let article = document.createElement("article");
+            let title = document.createElement("h3");
+            title.innerText = "Lorem ipsum";
+            article.appendChild(title);
+
+            let content = ["Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, recusandae incidunt impedit rem quam autem nobis ratione repellat perspiciatis maxime! Facere ducimus ullam modi, ratione nam voluptates suscipit quidem magni.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris cursus mattis molestie a iaculis at. Fermentum odio eu feugiat pretium nibh ipsum. Nibh nisl condimentum id venenatis. Neque aliquam vestibulum morbi blandit cursus risus at. Nibh mauris cursus mattis molestie. Tortor dignissim convallis aenean et tortor at risus viverra adipiscing. Arcu vitae elementum curabitur vitae. Quam vulputate dignissim suspendisse in est ante. Commodo odio aenean sed adipiscing diam donec adipiscing. Pharetra et ultrices neque ornare aenean euismod elementum nisi quis. Egestas quis ipsum suspendisse ultrices gravida dictum fusce. Vitae ultricies leo integer malesuada nunc vel risus commodo. Platea dictumst vestibulum rhoncus est pellentesque. Dignissim sodales ut eu sem integer vitae. In dictum non consectetur a erat nam at.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Accumsan in nisl nisi scelerisque eu ultrices vitae. Nec dui nunc mattis enim ut tellus elementum sagittis. Tellus elementum sagittis vitae et leo duis ut diam. Tristique sollicitudin nibh sit amet commodo nulla facilisi.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla facilisi nullam vehicula ipsum a arcu cursus vitae. Nullam ac tortor vitae purus. Vestibulum lectus mauris ultrices eros. Enim eu turpis egestas pretium aenean pharetra magna. Massa vitae tortor condimentum lacinia quis. Proin libero nunc consequat interdum. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio. Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. In egestas erat imperdiet sed euismod nisi porta lorem. Semper quis lectus nulla at volutpat diam ut venenatis. Amet consectetur adipiscing elit ut aliquam purus sit. Orci a scelerisque purus semper. Integer eget aliquet nibh praesent. Sed pulvinar proin gravida hendrerit lectus a. Nullam eget felis eget nunc lobortis mattis. Arcu dui vivamus arcu felis bibendum ut. Placerat duis ultricies lacus sed turpis. Integer eget aliquet nibh praesent tristique magna. Lorem ipsum dolor sit amet consectetur adipiscing elit.\n\nUt venenatis tellus in metus vulputate eu. Etiam non quam lacus suspendisse faucibus interdum posuere. Cursus euismod quis viverra nibh. Tincidunt dui ut ornare lectus sit amet est. Lobortis mattis aliquam faucibus purus in. Congue quisque egestas diam in arcu cursus euismod quis. Consequat id porta nibh venenatis. Nisl condimentum id venenatis a condimentum vitae. Et malesuada fames ac turpis egestas integer eget aliquet. Tortor at auctor urna nunc id cursus. Lorem ipsum dolor sit amet. Eu turpis egestas pretium aenean pharetra magna. Nulla facilisi morbi tempus iaculis urna id.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Tortor dignissim convallis aenean et tortor at risus viverra. Consectetur libero id faucibus nisl. Mattis aliquam faucibus purus in massa tempor. Tempor orci dapibus ultrices in iaculis. Urna id volutpat lacus laoreet non curabitur gravida arcu ac. Nec feugiat in fermentum posuere urna nec tincidunt praesent. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Sodales ut etiam sit amet nisl purus. Sit amet volutpat consequat mauris nunc congue nisi. Porttitor leo a diam sollicitudin tempor id eu nisl. Consectetur adipiscing elit ut aliquam purus sit amet luctus.\n\nSit amet consectetur adipiscing elit ut aliquam purus sit. Aenean pharetra magna ac placerat. Mattis aliquam faucibus purus in massa tempor nec feugiat nisl. Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant. Convallis aenean et tortor at risus viverra adipiscing. Amet nisl purus in mollis. Ut sem nulla pharetra diam sit amet. Non pulvinar neque laoreet suspendisse. Cras ornare arcu dui vivamus arcu. Quam nulla porttitor massa id neque aliquam vestibulum morbi blandit. Lacus sed turpis tincidunt id aliquet risus feugiat in. Dictumst vestibulum rhoncus est pellentesque. Sed id semper risus in hendrerit gravida rutrum quisque non. Dignissim cras tincidunt lobortis feugiat. Non curabitur gravida arcu ac tortor dignissim convallis aenean et. Condimentum lacinia quis vel eros donec ac odio tempor.\n\nAmet justo donec enim diam vulputate ut pharetra. Quis eleifend quam adipiscing vitae. Mi bibendum neque egestas congue quisque egestas. Eros in cursus turpis massa tincidunt dui ut ornare. Iaculis at erat pellentesque adipiscing commodo elit at imperdiet dui. Ultrices eros in cursus turpis massa tincidunt. Vulputate ut pharetra sit amet aliquam. Vulputate sapien nec sagittis aliquam malesuada bibendum. Convallis tellus id interdum velit laoreet id donec ultrices tincidunt. Mattis nunc sed blandit libero volutpat sed cras. Est ultricies integer quis auctor elit sed vulputate mi sit. Ut morbi tincidunt augue interdum velit euismod in pellentesque massa. Ultrices tincidunt arcu non sodales neque sodales ut etiam sit. Scelerisque purus semper eget duis at. Nibh ipsum consequat nisl vel pretium lectus quam. Condimentum lacinia quis vel eros donec ac odio. Bibendum est ultricies integer quis auctor elit sed vulputate. Tellus in metus vulputate eu scelerisque felis imperdiet proin."]
+
+            let random = Math.floor(Math.random() * content.length);
+            let p = document.createElement("p");
+            p.innerText = content[random];
+            article.appendChild(p);
+            main.appendChild(article);
+        }
+
+
+        function getScrollTop() {
+            if (typeof window.pageYOffset !== "undefined") {
+                return window.pageYOffset;
+            }
+
+            if (typeof document.documentElement.clientHeight !== "undefined") {
+                return document.documentElement.scrollTop;
+            }
+
+            return document.body.scrollTop;
+        }
+
+        window.onscroll = () => {
+            let line = document.getElementById("fishing-line");
+            let scroll = getScrollTop();
+
+            let viewHeight = document.documentElement.clientHeight;
+
+            let body = document.body;
+            let html = document.documentElement;
+            let totalHeight = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight)
+
+            if (scroll <= viewHeight) {
+                line.style.top = "calc(-100% - 60px)";
+            } else {
+                line.style.top = "calc(-100% - 60px + " + (scroll / totalHeight) * viewHeight + "px";
+            }
+        }
+
+        let hook = document.getElementById("hook");
+        hook.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        const today = new Date();
+        let hour = today.getHours();
+        if (hour >= 6 && hour < 18) {
+            dayTime();
+        } else {
+            nightTime();
+        }
+
+        function dayTime() {
+            document.body.id = "day";
+
+            let sun = document.getElementById("sun");
+            sun.style.display = "inline-block";
+            sun.style.animation = "rise 750ms ease-in-out";
+
+            sun.addEventListener("click", () => {
+                sun.style.animation = "set 750ms ease-in-out"
+                setTimeout(() => {
+                    sun.style.display = "none";
+                    sun.style.animation = "";
+                }, 740);
+                nightTime();
+            })
+        }
+
+        function nightTime() {
+            document.body.id = "night";
+
+            let moon = document.getElementById("moon");
+            moon.style.display = "inline-block"
+            moon.style.animation = "rise 750ms ease-in-out";
+
+            moon.addEventListener("click", () => {
+                moon.style.animation = "set 750ms ease-in-out"
+                setTimeout(() => {
+                    moon.style.display = "none";
+                    moon.style.animation = "";
+                }, 740);
+                dayTime();
+            })
+        }
+    </script>
+</body>
+
+</html>
